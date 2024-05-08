@@ -23,64 +23,60 @@
 ### 📂폴더구조
 ``` 
 music
-    ├─application
-    │      CartService.java
-    │      
-    ├─comparable
-    │  └─sort
-    │      ├─album
-    │      │      AscPrice.java
-    │      │      DescCollectionName.java
-    │      │      DescPrice.java
-    │      │      
-    │      ├─track
-    │      │      AscArtistName.java
-    │      │      AscReleaseDate.java
-    │      │      AscTrackName.java
-    │      │      DescArtistName.java
-    │      │      DescReleaseDate.java
-    │      │      DescTrackName.java
-    │      │      
-    │      └─track50
-    │              AscArtistName.java
-    │              AscReleaseDate.java
-    │              AscTrackName.java
-    │              DescArtistName.java
-    │              DescReleaseDate.java
-    │              DescTrackName.java
-    │              
-    ├─domain
-    │  │  Cart.java
-    │  │  CartItem.java
-    │  │  CartRepository.java
-    │  │  MyAlbum.java
-    │  │  Search.java
-    │  │  
-    │  └─dto
-    │          AlbumDTO.java
-    │          TrackDTO.java
-    │          
-    ├─infrastructure
-    │      CartInMemoryRepository.java
-    │      
-    ├─service
-    │      AudioPlayer.java
-    │      Database.java
-    │      
-    └─ui
-        └─console
-            │  CartController.java
-            │  Command.java
-            │  CommandHandler.java
-            │  MusicApplication.java
-            │  PrintList.java
-            │  PurchaseCommand.java
-            │  SearchCommand.java
-            │  SongCommand.java
-            │  SortCommand.java
-            │  
-            └─utils
-                    InputUtils.java
+C:.
+│  module-info.java
+│
+├─music
+│  │  ArrayRun.java
+│  │
+│  ├─application
+│  │      CartService.java
+│  │
+│  ├─comparable
+│  │  └─sort
+│  │      ├─album
+│  │      │      AscArtistName.java
+│  │      │      AscPrice.java
+│  │      │      DescArtistName.java
+│  │      │      DescPrice.java
+│  │      │
+│  │      └─track
+│  │              AscArtistName.java
+│  │              AscTrackName.java
+│  │              DescArtistName.java
+│  │              DescTrackName.java
+│  │
+│  ├─domain
+│  │  │  Cart.java
+│  │  │  CartItem.java
+│  │  │  CartRepository.java
+│  │  │  Search.java
+│  │  │
+│  │  └─dto
+│  │          AlbumDTO.java
+│  │          TrackDTO.java
+│  │
+│  ├─infrastructure
+│  │      CartInMemoryRepository.java
+│  │
+│  ├─service
+│  │      AudioPlayer.java
+│  │      Database.java
+│  │
+│  └─ui
+│      └─console
+│          │  CartController.java
+│          │  Command.java
+│          │  CommandHandler.java
+│          │  MusicApplication.java
+│          │  purchase_Command.java
+│          │  search_Command.java
+│          │
+│          └─utils
+│                  InputUtils.java
+│
+└─view
+        PrintList.java
 ```    
 
 
@@ -106,6 +102,6 @@ music
 
 #### 음악재생 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(%EB%A9%94%EC%9D%B8-Page)" >상세보기 - WIKI 이동</a>
 - JavaFX를 이용해서 검색에서 찾은 노래에대한 미리듣기URL로 음악을 재생
--  JavaFX에 대한 특성 때문에 메뉴와 음악재생하는 기능에 대한 쓰레드를 나눴음
+- JavaFX에 대한 특성 때문에 메뉴와 음악재생하는 기능에 대한 쓰레드를 나눴음
 
 
